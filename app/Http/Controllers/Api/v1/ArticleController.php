@@ -33,21 +33,21 @@ class ArticleController extends Controller
             case 'store':
                 {
                     return [
-                        'title' => 'required',
-                        'body' => 'required',
+                        'title' => 'required|string',
+                        'body' => 'required|string',
                     ];
                 }
             case 'update':
                 {
                     return [
-                        'title' => 'required',
-                        'body' => 'required|max:10',
+                        'title' => 'required|string',
+                        'body' => 'required|string',
                     ];
                 }
             case 'storeComment':
                 {
                     return [
-                        'body' => 'required',
+                        'body' => 'required|string',
                     ];
                 }
             default:

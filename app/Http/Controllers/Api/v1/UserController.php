@@ -86,8 +86,3 @@ class UserController extends Controller
     }
 
 }
-
-
-//        if(isset($valid_data['type'])){
-//            $valid_data['type'] = (int) $valid_data['type'];
-//        }
